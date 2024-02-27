@@ -87,8 +87,17 @@
   # ];
   environment.systemPackages = with pkgs; [
     neovim
+
     git
     lazygit
+
+    fd
+    ripgrep
+    fzf
+
+    yazi
+    bat
+    tmux
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
