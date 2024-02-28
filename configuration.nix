@@ -59,6 +59,8 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
+  programs.zsh.enable = true;
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   # users.users.alice = {
   #   isNormalUser = true;
@@ -71,6 +73,7 @@
   users.users.sakura = {
     isNormalUser = true;
     extraGroups = [ "wheel" ];
+    shell = pkgs.zsh;
     openssh.authorizedKeys.keys = [
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILNgMPVFSkH8enITwYxfYo2VWa10z9ob2ZJoLL0ib8Ie sakura@sakura-endevour"
     ];
