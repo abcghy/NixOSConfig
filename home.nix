@@ -14,7 +14,7 @@
 
     # misc
     tree
-
+    du-dust
     btop
   ];
 
