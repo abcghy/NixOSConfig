@@ -26,6 +26,10 @@
 
   programs.zsh = {
     enable = true;
+    shellAliases = {
+      lg = "lazygit";
+      vim = "nvim";
+    };
   };
 
   # starship - an customizable prompt for any shell
